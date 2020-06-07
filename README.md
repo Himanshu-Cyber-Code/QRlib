@@ -32,16 +32,16 @@ pip3 install QRlib
 * [urllib module](https://pypi.org/project/urllib3/)
 
 ## Command Line Arguments
-* ##### to update QRlib to latest versio
-    * ```python -m QRlib --update```
+* ##### to update QRlib to latest version
+* ```python -m QRlib --update```
 
-    * ```python -m QRlib -u```
+* ```python -m QRlib -u```
 * ##### to get help on module QRlib
-    * ```python -m QRlib --help```
- 
-    * ```python -m QRlib -h```
+* ```python -m QRlib --help```
 
-## Importing QRli
+* ```python -m QRlib -h```
+
+## Importing QRlib
 
 
 import QRlib with command
@@ -50,6 +50,7 @@ from QRlib.QRlib import *
 ```
 
 ## Generating QR codes
+
 ###### *Classic QR*
 ![Classic QR](classicQR.png
 ```python
@@ -58,16 +59,17 @@ from QRlib.QRlib import *
 img_name = "ClassicQR" # name of Qr without extension of image ( default to png )
 qr_data = "this is an classic qr" # content of qr
 size = 200 # size in pixal ( optional )
+
 qr.classic(qr_data, img_name, size=size)
 ```
 
- ___
+___
 ###### *Tansparent QR*
 ![Transparent QR](transparentQR.png
 ```python
 from QRlib.QRlib import *
 
-img_name = "TransparentQR" # name of Qr without extension of image ( default to png 
+img_name = "TransparentQR" # name of Qr without extension of image ( default to png )
 qr_data = "this is an Transparent qr" # content of qr
 img_url = "https://9p933al7lphdqzqhwh4gbg-on.drv.tw/QRlib/transtest.png" # url for the image ( optional )
 size = 200 # size in pixal ( optional )
@@ -77,6 +79,7 @@ qr.transparent(qr_data, img_name, img=img_url, size=size)
 
 -------
 
+
 ###### *Clear QR*
 ![Clear QR](clearQR.png
 ```python
@@ -84,6 +87,8 @@ from QRlib.QRlib import *
 
 img_name = "ClearQR" # name of Qr without extension of image ( default to png )
 qr_data = "this is an Clear qr" # content of qr
+size = 200 # size in pixal ( optional )
+
 qr.clear(qr_data, qr_name, size=size)
 ```
 -------
@@ -148,7 +153,7 @@ qr_data = "this is an Custom qr" # content of qr
 
 qr.custom(
 qr_data,
-qr_name, 
+qr_name,
 body=5,  # Pattern Of QR Body
 frame=13,  # Eye Frame Pattern
 ball=15,  # QR Eye Ball Pattern
@@ -165,45 +170,34 @@ size=200 # Size For Qr
 ```
 
 
-|  Body Design  |  No. |
-|:------:|:------:|
-|    ![QRbody](/images/QR_body_design_QRlib/0.png "Body Design")    |    0    |
-|    ![QRbody](/images/QR_body_design_QRlib/1.png "Body Design")    |    1    |
-|    ![QRbody](/images/QR_body_design_QRlib/2.png "Body Design")    |    2    |
-|    ![QRbody](/images/QR_body_design_QRlib/3.png "Body Design")    |    3    |
-|    ![QRbody](/images/QR_body_design_QRlib/4.png "Body Design")    |    4    |
-|    ![QRbody](/images/QR_body_design_QRlib/5.png "Body Design")    |    5    |
-|    ![QRbody](/images/QR_body_design_QRlib/6.png "Body Design")    |    6    |
-|    ![QRbody](/images/QR_body_design_QRlib/7.png "Body Design")    |    7    |
-|    ![QRbody](/images/QR_body_design_QRlib/8.png "Body Design")    |    8    |
-|    ![QRbody](/images/QR_body_design_QRlib/9.png "Body Design")    |    9    |
-|    ![QRbody](/images/QR_body_design_QRlib/10.png "Body Design")    |    10    |
-|    ![QRbody](/images/QR_body_design_QRlib/11.png "Body Design")    |    11    |
-|    ![QRbody](/images/QR_body_design_QRlib/12.png "Body Design")    |    12    |
-|    ![QRbody](/images/QR_body_design_QRlib/13.png "Body Design")    |    13    |
-|    ![QRbody](/images/QR_body_design_QRlib/14.png "Body Design")    |    14    |
-|    ![QRbody](/images/QR_body_design_QRlib/15.png "Body Design")    |    15    |
+|  Body Design  |  No. |    |  Frame Design   |  No.   |     |  Ball Design  |  No.  |
+|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|    ![QRbody](/images/QR_body_design_QRlib/0.png "Body Design")     |    0     |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
+|    ![QRbody](/images/QR_body_design_QRlib/1.png "Body Design")     |    1     |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
+|    ![QRbody](/images/QR_body_design_QRlib/2.png "Body Design")     |    2     |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
+|    ![QRbody](/images/QR_body_design_QRlib/3.png "Body Design")     |    3     |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
+|    ![QRbody](/images/QR_body_design_QRlib/4.png "Body Design")     |    4     |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
+|    ![QRbody](/images/QR_body_design_QRlib/5.png "Body Design")     |    5     |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
+|    ![QRbody](/images/QR_body_design_QRlib/6.png "Body Design")     |    6     |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
+|    ![QRbody](/images/QR_body_design_QRlib/7.png "Body Design")     |    7     |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
+|    ![QRbody](/images/QR_body_design_QRlib/8.png "Body Design")     |    8     |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
+|    ![QRbody](/images/QR_body_design_QRlib/9.png "Body Design")     |    9     |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
+|    ![QRbody](/images/QR_body_design_QRlib/10.png "Body Design")    |    10    |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
+|    ![QRbody](/images/QR_body_design_QRlib/11.png "Body Design")    |    11    |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
+|    ![QRbody](/images/QR_body_design_QRlib/12.png "Body Design")    |    12    |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
+|    ![QRbody](/images/QR_body_design_QRlib/13.png "Body Design")    |    13    |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
+|    ![QRbody](/images/QR_body_design_QRlib/14.png "Body Design")    |    14    |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
+|    ![QRbody](/images/QR_body_design_QRlib/15.png "Body Design")    |    15    |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
+|    ![QRbody](/images/QR_body_design_QRlib/16.png "Body Design")    |    16    |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
+|    ![QRbody](/images/QR_body_design_QRlib/17.png "Body Design")    |    17    |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
+|    ![QRbody](/images/QR_body_design_QRlib/18.png "Body Design")    |    18    |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
+|    ![QRbody](/images/QR_body_design_QRlib/19.png "Body Design")    |    19    |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
+|    ![QRbody](/images/QR_body_design_QRlib/20.png "Body Design")    |    20    |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
+|    ![QRbody](/images/QR_body_design_QRlib/21.png "Body Design")    |    21    |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+___
+###### Web Qr

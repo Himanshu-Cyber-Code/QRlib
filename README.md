@@ -32,7 +32,7 @@ pip3 install QRlib
 * [urllib module](https://pypi.org/project/urllib3/)
 
 ## Command Line Arguments
-* ##### to update QRlib to latest version
+* ##### to update QRlib to latest versio
     * ```python -m QRlib --update```
 
     * ```python -m QRlib -u```
@@ -41,7 +41,7 @@ pip3 install QRlib
  
     * ```python -m QRlib -h```
 
-## Importing QRlib
+## Importing QRli
 
 
 import QRlib with command
@@ -50,7 +50,6 @@ from QRlib.QRlib import *
 ```
 
 ## Generating QR codes
-
 ###### *Classic QR*
 ![Classic QR](classicQR.png
 ```python
@@ -59,7 +58,6 @@ from QRlib.QRlib import *
 img_name = "ClassicQR" # name of Qr without extension of image ( default to png )
 qr_data = "this is an classic qr" # content of qr
 size = 200 # size in pixal ( optional )
-
 qr.classic(qr_data, img_name, size=size)
 ```
 
@@ -69,7 +67,7 @@ qr.classic(qr_data, img_name, size=size)
 ```python
 from QRlib.QRlib import *
 
-img_name = "TransparentQR" # name of Qr without extension of image ( default to png )
+img_name = "TransparentQR" # name of Qr without extension of image ( default to png 
 qr_data = "this is an Transparent qr" # content of qr
 img_url = "https://9p933al7lphdqzqhwh4gbg-on.drv.tw/QRlib/transtest.png" # url for the image ( optional )
 size = 200 # size in pixal ( optional )
@@ -79,7 +77,6 @@ qr.transparent(qr_data, img_name, img=img_url, size=size)
 
 -------
 
-
 ###### *Clear QR*
 ![Clear QR](clearQR.png
 ```python
@@ -87,8 +84,6 @@ from QRlib.QRlib import *
 
 img_name = "ClearQR" # name of Qr without extension of image ( default to png )
 qr_data = "this is an Clear qr" # content of qr
-size = 200 # size in pixal ( optional )
-
 qr.clear(qr_data, qr_name, size=size)
 ```
 -------
@@ -188,19 +183,8 @@ size=200 # Size For Qr
 |    ![QRbody](/images/QR_body_design_QRlib/13.png "Body Design")    |    13    |
 |    ![QRbody](/images/QR_body_design_QRlib/14.png "Body Design")    |    14    |
 |    ![QRbody](/images/QR_body_design_QRlib/15.png "Body Design")    |    15    |
-|    ![QRbody](/images/QR_body_design_QRlib/16.png "Body Design")    |    16    |
-|    ![QRbody](/images/QR_body_design_QRlib/17.png "Body Design")    |    17    |
-|    ![QRbody](/images/QR_body_design_QRlib/18.png "Body Design")    |    18    |
-|    ![QRbody](/images/QR_body_design_QRlib/19.png "Body Design")    |    19    |
-|    ![QRbody](/images/QR_body_design_QRlib/20.png "Body Design")    |    20    |
-|    ![QRbody](/images/QR_body_design_QRlib/21.png "Body Design")    |    21    |
 
 
-
-
-
-___
-###### Web Qr
 
 
 

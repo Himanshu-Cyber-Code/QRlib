@@ -1,7 +1,5 @@
 # QRlib
 
-done
-
 QRlib is an pure python qr code generator which can be used to create simple QR code , designer QR code or trackable QR codes
 
 

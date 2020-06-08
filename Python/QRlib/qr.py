@@ -37,7 +37,7 @@ def transparent(qrdata, name, img="", size=100):
         if per==8:
             ql._svg2png((str(name)+'.svg'),(str(name)))
     
-def custom(qrdata, name, body=5, frame=13, ball=15, bodycolor=(148,143,32), bgcolor=(255,255,255), ballcolor=(26,26,56), framecolor=(3,190,242), shadecolor=(41,136,161), shadeonball=True, shadetype=0, logo='', size=200):
+def custom(qrdata, name, body=6, frame=5, ball=7, bodycolor=(17, 49, 81), bgcolor=(255, 255, 255), ballcolor=(17, 49, 81), framecolor=(17, 49, 81), shadecolor=(17,49,81), shadeonball=True, shadetype=0, logo='', size=200):
     for per in ql._percentbar([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29], 'custom'):
         if per==1:
             ql._checkdata(qrdata, 'string', 'DATA FOR QR')
@@ -72,13 +72,15 @@ def custom(qrdata, name, body=5, frame=13, ball=15, bodycolor=(148,143,32), bgco
         if per==16:
             shadetype1 = shadeformat[str(shadetype)]
         if per==17:
-            design = {'0':'square','1':'mosaic','2':'dot','3':'circle','4':'circle-zebra','5':'circle-zebra-vertical','6':'circular','7':'edge-cut','8':'edge-cut-smooth','9':'japnese','10':'leaf','11':'pointed','12':'pointed-edge-cut','13':'pointed-in','14':'pointed-in-smooth','15':'pointed-smooth','16':'round','17':'rounded-in','18':'rounded-in-smooth','19':'rounded-pointed','20':'star','21':'diamond'}
+            designbody = {'0':'square','1':'mosaic','2':'dot','3':'circle','4':'circle-zebra','5':'circle-zebra-vertical','6':'circular','7':'edge-cut','8':'edge-cut-smooth','9':'japnese','10':'leaf','11':'pointed','12':'pointed-edge-cut','13':'pointed-in','14':'pointed-in-smooth','15':'pointed-smooth','16':'round','17':'rounded-in','18':'rounded-in-smooth','19':'rounded-pointed','20':'star','21':'diamond'}
+            designframe = {'0':'frame0','1':'frame1','2':'frame10','3':'frame11','4':'frame12','5':'frame13','6':'frame14','7':'frame16','8':'frame2','9':'frame3','10':'frame4','11':'frame5','12':'frame6','13':'frame7','14':'frame8'}
+            designball = {'0':'ball0','1':'ball1','2':'ball10','3':'ball11','4':'ball12','5':'ball13','6':'ball14','7':'ball15','8':'ball16','9':'ball17','10':'ball18','11':'ball19','12':'ball2','13':'ball3','14':'ball5','15':'ball6','16':'ball7','17':'ball8'}
         if per==18:
-            _body = design[str(body)]
+            _body = designbody[str(body)]
         if per==19:
             _frame = ('frame'+str(frame))
         if per==20:
-            _ball = ('ball'+str(ball))
+            _ball = designball[str(ball)]
         if per==21:
             _bodycolor = ql._rgb2hex(bodycolor)
         if per==22:
@@ -143,7 +145,7 @@ def web(qrdata, name, tittle=''):
         if per==10:
             url=str(url)+'text='+str(tittle)
         if per==11:
-            weburl=('URL:'+str(url))
+            weburl=('URL:'+ql._traceableurl(str(url)))
         if per==12:
             configration = {"data": str(weburl),"image": str("https://mjfv74xauzaho1ipyjadzg-on.drv.tw/QRlib/QRlib.png"),"x": 0,"y": 0,"size": 500,"crop": True,"download": False,"file": "svg"}
         if per==13:

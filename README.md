@@ -52,9 +52,12 @@ from QRlib.QRlib import *
 ## Generating QR codes
 
 ###### *Classic QR*
+
+
 | ![Classic QR](images/QR_sample_QRlib/classic.png) |
 |:------:|
 |    ```classic```    |
+
 
 ```python
 from QRlib.QRlib import *
@@ -68,9 +71,12 @@ qr.classic(qr_data, img_name, size=size)
 
 ___
 ###### *Tansparent QR*
+
+
 | ![Transparent QR](images/QR_sample_QRlib/transparent.png) |
 |:------:|
 |    ```transparent```    |
+
 
 ```python
 from QRlib.QRlib import *
@@ -87,9 +93,13 @@ qr.transparent(qr_data, img_name, img=img_url, size=size)
 
 
 ###### *Clear QR*
+
+
 | ![Clear QR](images/QR_sample_QRlib/clear.png) |
 |:------:|
 |    ```clear```    |
+
+
 ```python
 from QRlib.QRlib import *
 

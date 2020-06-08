@@ -142,14 +142,14 @@ qr_data = "this is an Custom qr" # content of qr
 qr.custom(
 qr_data,
 qr_name,
-body=5,  # Pattern Of QR Body
-frame=13,  # Eye Frame Pattern
-ball=15,  # QR Eye Ball Pattern
-bodycolor=(148,143,32),  # Colour For QR Body
-bgcolor=(255,255,255),  # QR Back Ground Colour
-ballcolor=(26,26,56),  # QR Eye Ball Colour
-framecolor=(3,190,242),  # QR Frame Colour
-shadecolor=(41,136,161),  # Colour Of Other  Shade Which Will Be Mix With Body Colour
+body=6,  # Pattern Of QR Body
+frame=5,  # Eye Frame Pattern
+bodyc7,  # QR Eye Ball Pattern
+bodycolor=(17, 49, 81),  # Colour For QR Body
+bgcolor=(255, 255, 255),  # QR Back Ground Colour
+ballcolor=(17, 49, 81),  # QR Eye Ball Colour
+framecolor=(17, 49, 81),  # QR Frame Colour
+shadecolor=(17, 49, 81),  # Colour Of Other  Shade Which Will Be Mix With Body Colour
 shadeonball=True,  # If Shade Has To Be Applied On Eye Balls of Qr
 shadetype=0,  # Type Of shade From Linear Or Radial
 logo='https://raw.githubusercontent.com/Himanshu-Cyber-Code/QRlib/master/images/QR_sample_QRlib/transparent_test.png',  # Logo On Qr ( URL )
@@ -186,3 +186,21 @@ size=200 # Size For Qr
 
 ___
 ###### Web Qr
+
+
+| ![WebQR](images/QR_sample_QRlib/Web.png) | ![WebQRScreen](images/QR_sample_QRlib/WebQR_screenshot.jpg) |
+|:------:|:------:|
+|    ```Web QR```    |    [Link In QR](https://is.gd/mczMv4)    |
+
+
+```python
+# Web QR are online And Can Be Used In Track Data To Get Trackable QR ( Details On Track Data Bellow )
+from QRlib.QRlib import *
+
+img_name = "WebQR" # name of Qr without extension of image ( default to png )
+qr_data = ["line 1", "line 2", "line 3", "line 4", "line 5"] # content of web qr should be list of string each string represents line break ( maximum line is 5 )
+tittle = "i am tittle" # tittle of the web page ( optional )
+
+qr.web(qr_data, img_name, tittle=tittle)
+```
+

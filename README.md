@@ -191,9 +191,9 @@ size=200 # Size For Qr
 |    ![QRbody](/images/QR_body_design_QRlib/16.png "Body Design")    |    16    |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
 |    ![QRbody](/images/QR_body_design_QRlib/17.png "Body Design")    |    17    |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
 |    ![QRbody](/images/QR_body_design_QRlib/18.png "Body Design")    |    18    |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
-|    ![QRbody](/images/QR_body_design_QRlib/19.png "Body Design")    |    19    |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
-|    ![QRbody](/images/QR_body_design_QRlib/20.png "Body Design")    |    20    |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
-|    ![QRbody](/images/QR_body_design_QRlib/21.png "Body Design")    |    21    |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
+|    ![QRbody](images/QR_body_design_QRlib/19.png "Body Design")    |    19    |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
+|    ![QRbody](images/QR_body_design_QRlib/20.png "Body Design")    |    20    |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
+|    ![QRbody](images/QR_body_design_QRlib/21.png "Body Design")    |    21    |    |    ![QRframe](/images/QR_frame_design_QRlib/0.png "Frame Design")     |    0     |    |    ![QRball](/images/QR_ball_design_QRlib/0.png "Ball Design")     |    0     |
 
 
 

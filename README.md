@@ -54,7 +54,7 @@ from QRlib.QRlib import *
 ###### *Classic QR*
 | ![Classic QR](images/QR_sample_QRlib/classic.png) |
 |:------:|
-| ```classic``` |
+|    ```classic```    |
 
 ```python
 from QRlib.QRlib import *
@@ -70,7 +70,7 @@ ___
 ###### *Tansparent QR*
 | ![Transparent QR](images/QR_sample_QRlib/transparent.png) |
 |:------:|
-| ```transparent``` |
+|    ```transparent```    |
 
 ```python
 from QRlib.QRlib import *
@@ -89,7 +89,7 @@ qr.transparent(qr_data, img_name, img=img_url, size=size)
 ###### *Clear QR*
 | ![Clear QR](images/QR_sample_QRlib/clear.png) |
 |:------:|
-| ```clear``` |
+|    ```clear```    |
 ```python
 from QRlib.QRlib import *
 

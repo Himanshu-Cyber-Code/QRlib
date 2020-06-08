@@ -33,13 +33,13 @@ pip3 install QRlib
 
 ## Command Line Arguments
 * ##### to update QRlib to latest version
-* ```python -m QRlib --update```
+    * ```python -m QRlib --update```
 
-* ```python -m QRlib -u```
+    * ```python -m QRlib -u```
 * ##### to get help on module QRlib
-* ```python -m QRlib --help```
+    * ```python -m QRlib --help```
 
-* ```python -m QRlib -h```
+    * ``python -m QRlib -h```
 
 ## Importing QRlib
 
@@ -52,7 +52,7 @@ from QRlib.QRlib import *
 ## Generating QR codes
 
 ###### *Classic QR*
-![Classic QR](classicQR.png
+![Classic QR](images/QR_sample_QRlib/classic.png)
 ```python
 from QRlib.QRlib import *
 
@@ -65,7 +65,7 @@ qr.classic(qr_data, img_name, size=size)
 
 ___
 ###### *Tansparent QR*
-![Transparent QR](transparentQR.png
+![Transparent QR](images/QR_sample_QRlib/transparent.png)
 ```python
 from QRlib.QRlib import *
 
@@ -81,7 +81,7 @@ qr.transparent(qr_data, img_name, img=img_url, size=size)
 
 
 ###### *Clear QR*
-![Clear QR](clearQR.png
+![Clear QR](images/QR_sample_QRlib/clear.png)
 ```python
 from QRlib.QRlib import *
 
@@ -164,9 +164,6 @@ size=200 # Size For Qr
 |    ![QRbody](images/QR_body_design_QRlib/19.png "Body Design")    |    19    |    |                                                                      |          |    |                                                                   |          |
 |    ![QRbody](images/QR_body_design_QRlib/20.png "Body Design")    |    20    |    |                                                                      |          |    |                                                                   |          |
 |    ![QRbody](images/QR_body_design_QRlib/21.png "Body Design")    |    21    |    |                                                                      |          |    |                                                                   |          |
-
-
-
 
 
 ___

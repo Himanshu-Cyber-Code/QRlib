@@ -39,7 +39,7 @@ pip3 install QRlib
 * ##### to get help on module QRlib
     * ```python -m QRlib --help```
 
-    * ``python -m QRlib -h```
+    * ```python -m QRlib -h```
 
 ## Importing QRlib
 

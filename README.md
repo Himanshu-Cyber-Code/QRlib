@@ -55,7 +55,6 @@ from QRlib.QRlib import *
 | ![Classic QR](images/QR_sample_QRlib/classic.png) |
 |:------:|
 |    ```classic```    |
-done
 
 ```python
 from QRlib.QRlib import *

@@ -52,7 +52,10 @@ from QRlib.QRlib import *
 ## Generating QR codes
 
 ###### *Classic QR*
-![Classic QR](images/QR_sample_QRlib/classic.png)
+| ![Classic QR](images/QR_sample_QRlib/classic.png) |
+|:--------:|
+| ```classic``` |
+
 ```python
 from QRlib.QRlib import *
 
@@ -65,13 +68,16 @@ qr.classic(qr_data, img_name, size=size)
 
 ___
 ###### *Tansparent QR*
-![Transparent QR](images/QR_sample_QRlib/transparent.png)
+| ![Transparent QR](images/QR_sample_QRlib/transparent.png) |
+|:---------:|
+| ```transparent``` |
+
 ```python
 from QRlib.QRlib import *
 
 img_name = "TransparentQR" # name of Qr without extension of image ( default to png )
 qr_data = "this is an Transparent qr" # content of qr
-img_url = "https://9p933al7lphdqzqhwh4gbg-on.drv.tw/QRlib/transtest.png" # url for the image ( optional )
+img_url = "https://raw.githubusercontent.com/Himanshu-Cyber-Code/QRlib/master/images/QR_sample_QRlib/transparent_test.png" # url for the image ( optional )
 size = 200 # size in pixal ( optional )
 
 qr.transparent(qr_data, img_name, img=img_url, size=size)
@@ -81,7 +87,9 @@ qr.transparent(qr_data, img_name, img=img_url, size=size)
 
 
 ###### *Clear QR*
-![Clear QR](images/QR_sample_QRlib/clear.png)
+| ![Clear QR](images/QR_sample_QRlib/clear.png) |
+|:-------:|
+| ```clear``` |
 ```python
 from QRlib.QRlib import *
 
@@ -134,7 +142,7 @@ framecolor=(3,190,242),  # QR Frame Colour
 shadecolor=(41,136,161),  # Colour Of Other  Shade Which Will Be Mix With Body Colour
 shadeonball=True,  # If Shade Has To Be Applied On Eye Balls of Qr
 shadetype=0,  # Type Of shade From Linear Or Radial
-logo='',  # Logo On Qr ( URL )
+logo='https://raw.githubusercontent.com/Himanshu-Cyber-Code/QRlib/master/images/QR_sample_QRlib/transparent_test.png',  # Logo On Qr ( URL )
 size=200 # Size For Qr
 )
 ```

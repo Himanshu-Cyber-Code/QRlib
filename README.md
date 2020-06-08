@@ -94,41 +94,11 @@ qr.clear(qr_data, qr_name, size=size)
 -------
 ###### *Custom QR*
 
-| ![Custom QR](custom1QR.png
-|:------:|
-|    ```Custom_1```    |
+| ![CustomQR](images/QR_sample_QRlib/custom1.png "Sample Custom QR") |  | ![CustomQR](images/QR_sample_QRlib/custom2.png "Sample Custom QR") |  | ![CustomQR](images/QR_sample_QRlib/custom3.png "Sample Custom QR") |  | ![CustomQR](images/QR_sample_QRlib/custom4.png "Sample Custom QR") |  | ![CustomQR](images/QR_sample_QRlib/custom5.png "Sample Custom QR") |  |  ![CustomQR](images/QR_sample_QRlib/custom6.png "Sample Custom QR") |  | ![CustomQR](images/QR_sample_QRlib/custom7.png "Sample Custom QR") |  | ![CustomQR](images/QR_sample_QRlib/custom8.png "Sample Custom QR") |  |  ![CustomQR](images/QR_sample_QRlib/custom9.png "Sample Custom QR") |
+|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|    ```Custom_1```    |        |    ```Custom_2```    |        |    ```Custom_3```    |        |    ```Custom_4```    |        |    ```Custom_5```    |        |    ```Custom_6```    |        |    ```Custom_7```    |        |    ```Custom_8```    |        |    ```Custom_9```    |
 
-| ![Custom QR](custom2QR.png
-|:------:|
-|    ```Custom_2```    |
 
-| ![Custom QR](custom3QR.png
-|:------:|
-|    ```Custom_3```    |
-
-| ![Custom QR](custom4QR.png
-|:------:|
-|    ```Custom_4```    |
-
-| ![Custom QR](custom5QR.png
-|:------:|
-|    ```Custom_5```    |
-
-| ![Custom QR](custom6QR.png
-|:------:|
-|    ```Custom_6```    |
-
-| ![Custom QR](custom7QR.png
-|:------:|
-|    ```Custom_7```    |
-
-| ![Custom QR](custom8QR.png
-|:------:|
-|    ```Custom_8```    |
-
-| ![Custom QR](custom9QR.png
-|:------:|
-|    ```Custom_9```    |
 
 And +1000 More Design`s
 

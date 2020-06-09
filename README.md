@@ -2,6 +2,21 @@
 
 QRlib is an pure python qr code generator which can be used to create simple QR code , designer QR code or trackable QR codes
 
+## References
+
+* [Installation](#Installation)
+* [Requirements](#Requirements)
+* [Command Line Arguments](#Command Line Arguments)
+* [Generating QR codes](#Generating QR codes)
+       * []()
+       * []()
+       * []()
+       * []()
+
+
+
+
+
 
 ## What is a QR Code?
 
@@ -25,6 +40,7 @@ pip3 install QRlib
 
 
 * python 3.4 or above
+* Internet Connection
 * [requests module](https://pypi.org/project/requests/)
 * [tqdm module](https://pypi.org/project/tqdm/)
 * [svglib module](https://pypi.org/project/svglib/)
@@ -60,6 +76,7 @@ from QRlib.QRlib import *
 
 
 ```python
+
 from QRlib.QRlib import *
 
 img_name = "ClassicQR" # name of Qr without extension of image ( default to png )
@@ -79,6 +96,7 @@ ___
 
 
 ```python
+
 from QRlib.QRlib import *
 
 img_name = "TransparentQR" # name of Qr without extension of image ( default to png )
@@ -101,6 +119,7 @@ qr.transparent(qr_data, img_name, img=img_url, size=size)
 
 
 ```python
+
 from QRlib.QRlib import *
 
 img_name = "ClearQR" # name of Qr without extension of image ( default to png )
@@ -121,6 +140,7 @@ qr.clear(qr_data, qr_name, size=size)
 And +1000 More Design`s
 
 ```python
+
 # An Minimum Example
 
 from QRlib.QRlib import *
@@ -132,6 +152,7 @@ qr.custom(qr_data, qr_name)
 ```
 
 ```python
+
 # An Maximum Example
 
 from QRlib.QRlib import *
@@ -188,12 +209,13 @@ ___
 ###### Web Qr
 
 
-| ![WebQR](images/QR_sample_QRlib/Web.png) | ![WebQRScreen](images/QR_sample_QRlib/Web_QR_Screenshot.png) |
+| ![WebQR](images/QR_sample_QRlib/Web.png) | ![WebQRScreen](images/QR_sample_QRlib/WebQR_Screenshot.jpg) |
 |:------:|:------:|
 |    ```Web QR```    |    [Link In QR](https://is.gd/mczMv4)    |
 
 
 ```python
+
 # Web QR are online And Can Be Used In Track Data To Get Trackable QR ( Details On Track Data Bellow )
 from QRlib.QRlib import *
 
@@ -209,6 +231,7 @@ qr.web(qr_data, img_name, tittle=tittle)
 custom QR very hard to design every time because of their large options so there is the solution. 
 
 ```python
+
 # Generate a json containing the design for custom QR with commannd
 # And Use It In Future As A Template
 
@@ -223,6 +246,7 @@ generate.json_custom(
 To Use It
 
 ```python
+
 from QRlib.QRlib import *
 
 json_file_path = r"C:/My/Path/To/json_file.json"
@@ -239,6 +263,7 @@ to use them place them in the qr_data fields of qr
 ###### Text Data
 
 ```python
+
 from QRlib.QRlib import *
 data.text("Some Text")
 ```
@@ -246,6 +271,7 @@ data.text("Some Text")
 ###### URL Data
 
 ```python
+
 from QRlib.QRlib import *
 data.url("https://example.com")
 
@@ -256,6 +282,7 @@ data.url("https://example.com", short=True) # this will return a url some thing 
 ###### Email Data
 
 ```python
+
 from QRlib.QRlib import *
 email = "example@example.com"
 subject = "i am the subject of email"
@@ -266,6 +293,7 @@ data.email(email, subject = subject, message = message)
 ###### Phone Data
 
 ```python
+
 from QRlib.QRlib import *
 phone_number = "+919998887766"
 data.phone(phone_number)
@@ -274,6 +302,7 @@ data.phone(phone_number)
 ###### SMS Data
 
 ```python
+
 from QRlib.QRlib import *
 phone_number = "+919998887766"
 message = "i am message for the sms"
@@ -285,6 +314,7 @@ data.sms(phone_number, message=message)
 vcard are use in two versions to specify the version use command data.vcard2 or data.vcard3
 
 ```python
+
 from QRlib.QRlib import *
 
 first_name = "First_Name"
@@ -306,13 +336,14 @@ city="MyCity",                       #( optional )
 state="MyState",                     #( optional )
 country="MyCountry",                 #( optional )
 zipcode="836619",                    #( optional )
-street="MyStreet,                    #( optional )
+street="MyStreet",                   #( optional )
 )
 ```
 
 ###### Location Data
 
 ```python
+
 from QRlib.QRlib import *
 Latitude = 4637368
 Longitude = 4827636
@@ -322,6 +353,7 @@ data.location(Latitude, Longitude)
 ###### Wifi Data
 
 ```python
+
 from QRlib.QRlib import *
 wifi("ssid", "password", encryption=0) # 0='nopass' , 1='WPA' , 2='WEP'
 ```
@@ -329,6 +361,7 @@ wifi("ssid", "password", encryption=0) # 0='nopass' , 1='WPA' , 2='WEP'
 ###### Event Data
 
 ```python
+
 from QRlib.QRlib import *
 
 tittle = "Event Tittle"
@@ -345,6 +378,7 @@ end=[2020,6,16,11,54], # default is current time (end time of event) ([year,mont
 ###### Mecard Data
 
 ```python
+
 from QRlib.QRlib import *
 
 First_Name = "FirstName"
@@ -382,6 +416,7 @@ STEPS :-
 * they will get hosted on internet with a direct URL which will be put in QR
 
 ```python
+
 from QRlib.QRlib import *
 email = "example@example.com"
 file = "QRlib.png"
@@ -390,3 +425,31 @@ data.host(email ,file)
 
 ###### Trace URL data
 
+```python
+
+from QRlib.QRlib import *
+url = "https://example.com"
+data.trace(url, action=1)
+# action = 1 will generate a url with a suffix https://is.gd/ which can be traced in future
+```
+to trace the url generated above use action = 0
+
+```python
+
+from QRlib.QRlib import *
+url = # the url generated above
+data.trace(url ,action=0)
+# this will return a url which will contain the statistics of the given url
+```
+
+## ISSUES
+
+If any issues are seen in this module then feel free to tell us at [Our GitHub Page](https://github.com/Himanshu-Cyber-Code/QRlib/issues)
+
+## License
+
+##### MIT
+
+```
+MIT
+```

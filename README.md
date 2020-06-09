@@ -252,10 +252,22 @@ custom QR very hard to design every time because of their large options so there
 
 from QRlib.QRlib import *
 
+name = "json_file.json"
 generate.json_custom(
-
+name, 
+body=6, 
+frame=5, 
+ball=7, 
+bodycolor=(17, 49, 81), 
+bgcolor=(255, 255, 255), 
+ballcolor=(17, 49, 81), 
+framecolor=(17, 49, 81), 
+shadecolor=(17, 49, 81), 
+shadeonball=True, 
+shadetype=0, 
+logo="", 
+size=200,
 )
-
 ```
 
 To Use It

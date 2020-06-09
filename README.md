@@ -14,7 +14,7 @@ QRlib is an pure python qr code generator which can be used to create simple QR 
     * [Clear QR](##Cust-QR)
     * [Custom QR](#Custom-QR)
     * [Web QR](#Web-QR)
-    * [fast_design QR](#fast-design-QR)
+    * [fast_design QR](#fast_design-QR)
 * [Data For Data](#Types-Of-Data-For-QR)
     * [Text Data](#Text-Data)
     * [URL Data](#URL-Data)

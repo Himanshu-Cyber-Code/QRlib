@@ -188,7 +188,7 @@ ___
 ###### Web Qr
 
 
-| ![WebQR](images/QR_sample_QRlib/Web.png) | ![WebQRScreen](images/QR_sample_QRlib/WebQR_Screenshot.jpg) |
+| ![WebQR](images/QR_sample_QRlib/Web.png) | ![WebQRScreen](images/QR_sample_QRlib/Web_QR_Screenshot.png) |
 |:------:|:------:|
 |    ```Web QR```    |    [Link In QR](https://is.gd/mczMv4)    |
 

@@ -1,6 +1,6 @@
 #test.py
 
-from QRlib import *
+from QRlib.QRlib import *
 
 
 qr.classic('data','classic')

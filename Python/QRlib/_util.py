@@ -12,7 +12,7 @@ def _svg2png(_svgfile, _name):
     svg = open(_svgfile, "r")
     source = blockspring.runParsed("svg-to-png", { "svg_string": svg.read() }).params["png_file"]
     shutil.move(str(source), (str(os.getcwd())+"/"+str(_name)+".png"))
-    os.remove(source)
+    os.remove(str(os.getcwd())+"/"+str(_name)+".svg")
     
 def _checkdata(_data, _type, _name, _equal=None, _more=None, _less=None):
     if(type(_data)!=type(_type)):

@@ -4,9 +4,9 @@ from datetime import datetime
 import urllib.parse
 import sys
 import os
+import shutil
 from tqdm import tqdm
-from svglib.svglib import svg2rlg
-from reportlab.graphics import renderPM
+import blockspring
 
 def _svg2png(_svgfile, _name):
     drawing = svg2rlg(_svgfile)

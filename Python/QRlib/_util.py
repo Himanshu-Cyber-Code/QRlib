@@ -144,7 +144,7 @@ def _readjson(read):
 
 def _traceableurl(url):
     web = f'''https://is.gd/create.php?format=simple&logstats=1&url={url}'''
-    resonse = requests.post(web)
+    response = requests.post(web)
     if(response.status_code!=200):
         print('ERROR:an error occurred during establishing a connection to the server')
         sys.exit()

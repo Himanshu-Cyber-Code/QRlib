@@ -1,4 +1,3 @@
-
 from . import _util as ql
 
 def classic(qrdata, name, size=1000):

@@ -197,29 +197,12 @@ def host(email, file):
     host = 'URL:'+str(ql._shorturl(url))
     return host
     
-def trace(urlweb,url=1):
+def trace(urlweb,action=1):
     ql._checkdata(urlweb, 'string', 'URL FOR SITE DATA FOR QR')
     ql._checkdata(file, 0, 'URL TYPE DATA FOR QR',_more=1,_less=0)
     url = 'URL:'+str(ql._traceableurl(urlweb))
     urldata = ql._geturldata(urlweb)
-    if(url==1):
+    if(action==1):
         return url
-    if(url==0):
-        return ql._shorturl(str("https://"+urldata))
-
-
-    
-    
-    
-    
-    
-    
-    
- 
-        
-        
-        
-        
-        
-        
-        
+    if(action==0):
+        return ql._shorturl(str("https://himanshu-cyber-code.github.io/QRlib/HTML_support/QRlib_stats.html?url="+urldata))

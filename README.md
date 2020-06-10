@@ -58,8 +58,7 @@ pip3 install QRlib
 * Internet Connection
 * [requests module](https://pypi.org/project/requests/)
 * [tqdm module](https://pypi.org/project/tqdm/)
-* [svglib module](https://pypi.org/project/svglib/)
-* [reportlab module](https://pypi.org/project/reportlab/)
+* [blockspring module](https://pypi.org/project/blockspring/)
 * [urllib module](https://pypi.org/project/urllib3/)
 
 ## Command Line Arguments

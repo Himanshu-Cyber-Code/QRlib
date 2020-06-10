@@ -9,9 +9,10 @@ from tqdm import tqdm
 import blockspring
 
 def _svg2png(_svgfile, _name):
-    drawing = svg2rlg(_svgfile)
-    renderPM.drawToFile(drawing, (str(_name)+".png"), fmt="PNG")
-    os.remove(str(_name)+".svg")
+    svg = open(_svgfile, "r")
+    source = blockspring.runParsed("svg-to-png", { "svg_string": svg.read() }).params["png_file"]
+    shutil.move(str(source), (str(os.getcwd())+"/"+str(_name)+".png"))
+    os.remove(source)
     
 def _checkdata(_data, _type, _name, _equal=None, _more=None, _less=None):
     if(type(_data)!=type(_type)):

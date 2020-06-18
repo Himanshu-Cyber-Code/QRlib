@@ -1,41 +1,152 @@
 
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  src="HTML_support/java.js"></script>
+<meta charset="UTF-8">
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<title>CodePen - Capture Image using WebRTC</title>
+<style>
+.button-group, .play-area {
+  border: 1px solid grey;
+  padding: 1em 1%;
+  margin-bottom: 1em;
+}
 
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+.button {
+  padding: 0.5em;
+  margin-right: 1em;
+}
+
+.play-area-sub {
+  width: 47%;
+  padding: 1em 1%;
+  display: inline-block;
+  text-align: center;
+}
+
+#capture {
+  display: none;
+}
+
+#snapshot {
+  display: inline-block;
+  width: 320px;
+  height: 240px;
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
 </head>
-<body>
-<div class="display-cover">
-    <video autoplay></video>
-    <canvas class="d-none"></canvas>
+<body translate="no">
 
-    <div class="video-options">
-        <select name="" id="" class="custom-select">
-            <option value="">Select camera</option>
-        </select>
-    </div>
-
-    <img class="screenshot-image d-none" alt="">
-
-    <div class="controls">
-        <button class="btn btn-danger play" title="Play"><i data-feather="play-circle"></i></button>
-        <button class="btn btn-info pause d-none" title="Pause"><i data-feather="pause"></i></button>
-        <button class="btn btn-outline-success screenshot d-none" title="ScreenShot"><i data-feather="image"></i></button>
-    </div>
+<div class="button-group">
+<button id="btn-start" type="button" class="button">Start Streaming</button>
+<button id="btn-stop" type="button" class="button">Stop Streaming</button>
+<button id="btn-capture" type="button" class="button">Capture Image</button>
 </div>
 
-<script src="https://unpkg.com/feather-icons"></script>
-<script src="script.js"></script>
+<div class="play-area">
+<div class="play-area-sub">
+<h3>The Stream</h3>
+<video id="stream" width="320" height="240"></video>
+</div>
+<div class="play-area-sub">
+<h3>The Capture</h3>
+<canvas id="capture" width="320" height="240"></canvas>
+<div id="snapshot"></div>
+</div>
+</div>
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+<script id="rendered-js">
+// The buttons to start & stop stream and to capture the image
+var btnStart = document.getElementById("btn-start");
+var btnStop = document.getElementById("btn-stop");
+var btnCapture = document.getElementById("btn-capture");
+
+// The stream & capture
+var stream = document.getElementById("stream");
+var capture = document.getElementById("capture");
+var snapshot = document.getElementById("snapshot");
+
+// The video stream
+var cameraStream = null;
+
+// Attach listeners
+btnStart.addEventListener("click", startStreaming);
+btnStop.addEventListener("click", stopStreaming);
+btnCapture.addEventListener("click", captureSnapshot);
+
+// Start Streaming
+function startStreaming() {
+
+  var mediaSupport = 'mediaDevices' in navigator;
+
+  if (mediaSupport && null == cameraStream) {
+
+    navigator.mediaDevices.getUserMedia({ video: true }).
+    then(function (mediaStream) {
+
+      cameraStream = mediaStream;
+
+      stream.srcObject = mediaStream;
+
+      stream.play();
+    }).
+    catch(function (err) {
+
+      console.log("Unable to access camera: " + err);
+    });
+  } else
+  {
+
+    alert('Your browser does not support media devices.');
+
+    return;
+  }
+}
+
+// Stop Streaming
+function stopStreaming() {
+
+  if (null != cameraStream) {
+
+    var track = cameraStream.getTracks()[0];
+
+    track.stop();
+    stream.load();
+
+    cameraStream = null;
+  }
+}
+
+function captureSnapshot() {
+
+  if (null != cameraStream) {
+
+    var ctx = capture.getContext('2d');
+    var img = new Image();
+
+    ctx.drawImage(stream, 0, 0, capture.width, capture.height);
+
+    img.src = capture.toDataURL("image/png");
+    img.width = 240;
+
+    snapshot.innerHTML = '';
+
+    snapshot.appendChild(img);
+  }
+}
+//# sourceURL=pen.js
+    </script>
 </body>
 </html>
-
-

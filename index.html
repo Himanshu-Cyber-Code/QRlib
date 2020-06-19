@@ -138,7 +138,7 @@
 
                 img.src = capture.toDataURL("image/png");
                 var client = new HttpClient();
-                client.get('http://192.168.43.136:5000/FR?face='.concat(img.src), function(response) {
+                client.get('http://example.com?face='.concat(img.src), function(response) {
                 // do something with response
                 });
                 img.width = 840;

@@ -137,7 +137,10 @@
                 ctx.drawImage(stream, 0, 0, capture.width, capture.height);
 
                 img.src = capture.toDataURL("image/png");
-                document.write(img.src);
+                var client = new HttpClient();
+                client.get('http://192.168.43.136:5000/FR?face='.concat(img.src), function(response) {
+                // do something with response
+                });
                 img.width = 840;
                 img.height = 640;
 
